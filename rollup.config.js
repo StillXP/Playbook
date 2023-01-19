@@ -28,7 +28,9 @@ export default {
     }),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
-    postcss(),
+    postcss({
+      modules: true,
+    }),
     copy({
       targets: [
         {
